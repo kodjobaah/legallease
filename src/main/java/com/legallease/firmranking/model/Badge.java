@@ -1,6 +1,6 @@
 package com.legallease.firmranking.model;
 
-import lombok.*;
+import lombok.Data;
 import lombok.experimental.SuperBuilder;
 import lombok.extern.jackson.Jacksonized;
 

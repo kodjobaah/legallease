@@ -12,7 +12,6 @@ import java.util.List;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
-import static org.mockito.Mockito.when;
 
 @ExtendWith(SpringExtension.class)
 @DisplayName("Test for fetching the test data")
