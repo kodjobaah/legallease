@@ -10,7 +10,7 @@ The approach I would have taken would have been as follows:
   Provide a means for a user to acquire JWT token that would be used in the header.
   This can be achieved by creating an endpoint or using a third party that provides Auth0 services.
 - When user makes a request, in the bearer token of the header they will need to add the JWT token.
-- On the server side we would than retrieve this token from the header and validate it to determine
+- On the server side we would then retrieve this token from the header and validate it to determine
   if the user has the right permissions to be able to access the endpoint.
 
 ## Containerize app
