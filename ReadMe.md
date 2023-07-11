@@ -1,11 +1,11 @@
 # FirmRankings
 ## Framework
-I chose to use spring, due to its maturity and the extensive amount of suport it has.
+I chose to use spring, due to its maturity and the extensive amount of support it has.
 
 ## Securing Endpoint
 
 Due to time constraints, I was not able to implement the feature to secure the endpoint.
-The approach I would have taken would have been as follows:
+Below is the approach I would have tken:
 - JWT Token.
   Provide a means for a user to acquire JWT token that would be used in the header.
   This can be achieved by creating an endpoint or using a third party that provides Auth0 services.

@@ -29,7 +29,7 @@ class FirmRankingServiceImplTest {
     @DisplayName("Get Firm Ranking using region id when only 1 firm ranking")
     public void getFirmRankingWithRegionShouldReturnFirmRankings() {
 
-        Long regionId = 100L;
+        long regionId = 100L;
         List<FirmRanking> firmRankings = List.of(generateFirmRanking(regionId));
         when(firmRankingData.getFirmRankingData()).thenReturn(firmRankings);
         List<FirmRanking> results = firmRankingService.getFirmRankingWithRegionId(regionId);
@@ -41,7 +41,7 @@ class FirmRankingServiceImplTest {
     @DisplayName("Get Firm Ranking using region id when multiple there are firm rankings")
     public void getFirmRankingWithRegionShouldReturnMultipleFirmRankings() {
 
-        Long regionId = 100L;
+        long regionId = 100L;
         List<FirmRanking> firmRankings = List.of(
                 generateFirmRanking(regionId),
                 generateFirmRanking(regionId));
@@ -55,7 +55,7 @@ class FirmRankingServiceImplTest {
     @DisplayName("Get 1 Firm Ranking using region id when multiple firm ranking")
     public void getFirmRankingWithRegionShouldReturnMultipleFirmRankingsInDifferentRegions() {
 
-        Long regionId = 100L;
+        long regionId = 100L;
         List<FirmRanking> firmRankings = List.of(
                 generateFirmRanking(regionId),
                 generateFirmRanking(200L));
@@ -66,7 +66,7 @@ class FirmRankingServiceImplTest {
     }
 
     @Test
-    @DisplayName("Get Firm Ranking using not return firm ranking when regionId does not exist")
+    @DisplayName("Get Firm Ranking should not return any firm ranking when regionId does not exist")
     public void getFirmRankingWithRegionShouldNotReturnFirmRankingsWhenRegionIdDoesNotExist() {
 
         Long regionId = 100L;
