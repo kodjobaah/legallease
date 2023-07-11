@@ -2,6 +2,10 @@
 ## Framework
 I chose to use spring, due to its maturity and the extensive amount of support it has.
 
+## Storage
+Due to the structure of the data, if I had more time I would have stored the data in a document
+oriented database. eg. Mongodb.
+
 ## Securing Endpoint
 
 Due to time constraints, I was not able to implement the feature to secure the endpoint.
